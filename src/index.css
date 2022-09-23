@@ -1,8 +1,21 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
 body {
   font-family: "Montserrat", sans-serif;
   margin: 0;
   padding: 0;
+}
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background-color: #e6e6e6 !important;
 }
 .main-div {
   background: white url("./assets/images/bg-image.jpg") scroll center;
@@ -19,6 +32,7 @@ body {
   background: white url("./assets/images/userinfo.jpg") scroll center;
   background-size: cover;
   height: 91vh;
+  width: 100%;
   color: whitesmoke;
 }
 .profile-wrapper {
@@ -36,7 +50,27 @@ body {
   font-weight: bold;
   margin-right: 30px;
 }
-/* .user-info span {
-  float: right;
-  justify-content: space-between;
-} */
+/* sidebar */
+.navbar-right{
+  margin-right: 20px;
+}
+.right-sidebar{
+  background-color: black;
+  text-decoration: none;
+  margin-top: 5px;
+  padding: 0px;
+  width: 100%;
+  margin: 10px;
+  /* margin-right: 50px; */
+  justify-content: center;
+}
+.link-nav {
+  color: white !important;
+  text-decoration: none;
+  padding: 10px;
+  font-weight: bold;
+  display: block;
+}
+.row {
+  --bs-gutter-x: 0;
+}

@@ -1,33 +1,34 @@
 import React from "react";
 import { Card, Row, Col } from "reactstrap";
 import ReactPlayer from "react-player";
-import Sidebar from "./Sidebar";
+import Sidebar from "../Sidebar";
 
-const Videos = () => {
+const RecordedSection = () => {
   return (
     <React.Fragment>
       <Row>
         <Col md={2}>
           <Sidebar />
         </Col>
-
-        <Col md={10} className="mt-3">
-          <Row>
+        <Col md={10}>
+          <Row className="mt-2">
             <Col md={12}>
               <Card>
                 <ReactPlayer
                   controls
                   width="100%"
-                  url="https://player.vimeo.com/video/284436243?api=1&player_id=player_1"
+                  url="https://player.vimeo.com/video/545932551"
                 />
               </Card>
             </Col>
-            <Col md={12} className="mt-5">
+          </Row>
+          <Row className="mt-5">
+            <Col md={12}>
               <Card>
                 <ReactPlayer
                   controls
                   width="100%"
-                  url="https://player.vimeo.com/video/284436243?api=1&player_id=player_1"
+                  url="https://vimeo.com/543568826"
                 />
               </Card>
             </Col>
@@ -38,4 +39,4 @@ const Videos = () => {
   );
 };
 
-export default Videos;
+export default RecordedSection;
